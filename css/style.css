@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e798a2;
+  font-family: "Abel", sans-serif;
+}
+header {
+  flex-direction: row;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8aeaf;
+  padding: 15px;
+}
+header img {
+  max-width: 105px;
+  height: auto;
+  padding: 5px;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin: 30px 5px;
+  padding: 5px;
+  display: inline-block;
+}
+header nav ul li a {
+  background-color: #d58597;
+  border: #8f4374 2px solid;
+  color: #8f4374;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 8px 0 8px;
+  padding: 5px;
+}
+a:hover {
+  background-color: #e798a2;
+}
+/* fondo con imagen del home */
+.fondo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/maquillaje-profesional-fondo\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+/* titulo del home El mundo del maquillaje */
+.fondo1 h1 {
+  background-color: #f8aeafaf;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.galeria {
+  display: flex;
+  padding: 1rem 1rem;
+}
+h2.subt {
+  position: static;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  padding: 10px;
+}
+.section-img {
+  position: relative;
+  max-width: max-content;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.section-images {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: #050505 2px solid;
+}
+h2 {
+  position: absolute;
+  top: 45%;
+  left: 2px;
+  padding: 15px;
+  transform: translate((-50%, -50%));
+  text-align: center;
+  font-size: 1rem;
+  background-color: #f8aeaf9a;
+}
+/* texto del home */
+.textoA {
+  width: 900px;
+  margin: 50px auto;
+  font-size: 1.3rem;
+  background-color: #8f43748f;
+  border-radius: 20px;
+}
+p {
+  font-size: 1.2rem;
+  padding: 20px;
+}
+/* videos de makeup */
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+/* imagen de fondo en makeup */
+.FondoVideo {
+  background-image: url(../images/fondo-video1.jpg);
+}
+/* titulo del makeup, con fondo  */
+.texto1 {
+  background-color: #f8aeafaf;
+}
+/* texto del makeup */
+.texto2 {
+  background-color: #f8aeafaf;
+}
+.formulario {
+  text-align: center;
+  margin: 40px;
+}
+footer {
+  background-color: #f8aeaf;
+  text-align: center;
+  padding: 35px;
+}
+.redes {
+  background-color: #d58597;
+  border: #8f4374 2px solid;
+  color: #8f4374;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 8px 0 8px;
+  padding: 5px;
+}
+.redes hover {
+  background-color: #e798a2;
+}
+
+@media screen and (max-width:768px) {
+  header {
+    flex-direction: column;
+  }
+  .textoA {
+    width: 100%;
+  }
+  .section-img {
+    max-width: 200px; 
+  }
+}
+
+
+
+
+@media screen and (max-width:480px) {
+  header {
+    flex-direction: column;
+  }
+  .galeria {
+    flex-direction: column;
+  }
+  .textoA {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #8f43748f;
+    border-radius: 20px;
+  }
+  .section-img {
+    max-width: 280px; 
+  }
+}
