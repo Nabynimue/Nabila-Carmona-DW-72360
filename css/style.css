@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #000;
 }
 body {
   background: #e798a2;
@@ -32,16 +33,15 @@ header nav ul li {
   display: inline-block;
 }
 header nav ul li a {
-  background-color: #d58597;
-  border: #8f4374 2px solid;
-  color: #8f4374;
-  font-weight: 600;
+  font-size: 1.25rem;
   text-decoration: none;
-  border-radius: 0 8px 0 8px;
   padding: 5px;
+  color: #000;
 }
 a:hover {
-  background-color: #e798a2;
+  background-color:#e798a2;
+  border-radius: 0 6px 0 6px;
+  color: #000;
 }
 /* fondo con imagen del home */
 .fondo1 {
@@ -68,10 +68,10 @@ h1 {
   padding: 1rem 1rem;
 }
 h2.subt {
-  position: static;
   font-size: 2.5rem;
   margin-top: 10px;
   padding: 10px;
+  text-align: center;
 }
 .section-img {
   position: relative;
@@ -83,29 +83,33 @@ h2.subt {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: #050505 2px solid;
+  border: #000 2px solid;
 }
-h2 {
+h3 {
+  width: 100%;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 2px;
   padding: 15px;
   transform: translate((-50%, -50%));
   text-align: center;
   font-size: 1rem;
+  font-weight: 600;
   background-color: #f8aeaf9a;
 }
 /* texto del home */
 .textoA {
+  padding: 1rem;
   width: 900px;
   margin: 50px auto;
   font-size: 1.3rem;
-  background-color: #8f43748f;
-  border-radius: 20px;
+  font-weight: 600;
+  background-color: #d58597;
+  border-radius: 10px;
 }
 p {
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 10px 0;
 }
 /* videos de makeup */
 .video {
@@ -115,6 +119,12 @@ p {
   gap: 1.5rem;
   flex-direction: column;
   padding: 1rem 0;
+}
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+  max-width: 700px;
 }
 /* imagen de fondo en makeup */
 .FondoVideo {
@@ -126,7 +136,10 @@ p {
 }
 /* texto del makeup */
 .texto2 {
+  padding: 20px;
   background-color: #f8aeafaf;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .formulario {
   text-align: center;
@@ -139,17 +152,17 @@ footer {
 }
 .redes {
   background-color: #d58597;
-  border: #8f4374 2px solid;
-  color: #8f4374;
-  font-weight: 600;
+  font-size: 1.25rem;
   text-decoration: none;
-  border-radius: 0 8px 0 8px;
+  border-radius: 0 6px 0 6px;
   padding: 5px;
+  color: #000;
 }
-.redes hover {
-  background-color: #e798a2;
+.redes:hover {
+  background-color:#e798a2;
+  border-radius: 0 6px 0 6px;
+  color:#000 ;
 }
-
 @media screen and (max-width:768px) {
   header {
     flex-direction: column;
@@ -175,7 +188,6 @@ footer {
   .textoA {
     width: 100%;
     font-size: 1rem;
-    background-color: #8f43748f;
     border-radius: 20px;
   }
   .section-img {
