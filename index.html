@@ -18,30 +18,37 @@
       crossorigin="anonymous"
     />
     <!-- link de estilo propio -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Mundo del Maquillaje</title>
   </head>
   <body>
     <header>
-      <img src="./images/naby.jpeg" alt="logo-naby" />
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./pages/makeup.html">MakeUp</a>
-          </li>
-          <li>
-            <a href="./pages/blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><img src="../images/naby.jpeg" alt="logo-naby" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item fs-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link" href="pages/makeup.html">MakeUp</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link" href="pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item fs-4">
+                <a class="nav-link " href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="main1">
       <div class="fondo1">
         <h1>El Mundo Del Maquillaje</h1>
       </div>
@@ -182,7 +189,8 @@
         </p>
       </article>
     </main>
-    <footer><a class="redes" href="#">instagram</a></footer>
+    <footer>
+      <a class="redes" href="#">instagram</a></footer>
     <!-- link de boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

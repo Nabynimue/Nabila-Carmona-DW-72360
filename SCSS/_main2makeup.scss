@@ -1,0 +1,36 @@
+.main2 {
+    .FondoVideo {
+        background-image: url(../images/fondo-video1.jpg);
+            h1{
+            font-size: 3.5rem;
+            text-align: center;
+            .texto1 {
+                background-color: $bg-rosaTransp;
+                text-align: center;
+            }
+            }
+    .texto1 {
+        background-color: $bg-rosaTransp;
+    }
+    }
+    .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-direction: column;
+        padding: 1rem 0;
+            iframe{
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: 0;
+            max-width: 700px;
+            }
+    }
+    .texto2 {
+        padding: 20px;
+        background-color: $bg-rosaTransp;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}

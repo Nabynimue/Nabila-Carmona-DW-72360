@@ -1,0 +1,49 @@
+.main5{
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(12 , 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    .formulario-container{
+        grid-column: 4 / span 6;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.842);
+        @media screen and (max-width:768px) {
+            box-shadow: none;
+            grid-column: auto;   
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 0.75rem;
+            border: 1px solid $color-osc;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            outline: none;
+            &:focus {
+                border-color: $bg-rosaosc;
+                box-shadow: 0 0 0 2px rgba($bg-rosaCla, 0.2);
+            }
+        }
+        button{
+            background-color: $bg-rosaNu;
+            color: $color-osc;
+            padding: 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            &:hover{
+                background-color:$bg-rosaCla;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+header {
+        background: $bg-rosaCla;
+        img {
+            max-width: 105px;
+            height: auto;
+            padding: 5px;
+        }
+        a{
+            &:hover{
+                background-color: $bg-rosaNu;
+            }       
+        }       
+}

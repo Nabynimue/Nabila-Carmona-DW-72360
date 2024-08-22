@@ -1,0 +1,15 @@
+footer {
+    background-color: $bg-rosaCla;
+    text-align: center;
+    padding: 35px;
+    .redes {
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 5px;
+    color: $color-osc;
+    &:hover {
+        background-color: $bg-rosaNu;
+        padding:10px;
+    }
+    }
+}
