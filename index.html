@@ -17,6 +17,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- link de estilo propio -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Mundo del Maquillaje</title>
@@ -66,7 +67,7 @@
       </div>
       <h2 class="subt">Galeria</h2>
       <div class="galeria">
-        <section class="section-img">
+        <section class="section-img" data-aos="fade-right">
           <img
             class="section-images"
             src="./images/maquillaje-sofisticado.jpeg"
@@ -74,7 +75,7 @@
           />
           <h3>El maquillaje magnifica la belleza que ya existe.</h3>
         </section>
-        <section class="section-img">
+        <section class="section-img" data-aos="fade-down">
           <img
             class="section-images"
             src="./images/imgA.jpeg"
@@ -82,7 +83,7 @@
           />
           <h3>Mi bolsa de maquillaje tiene toda mi personalidad.</h3>
         </section>
-        <section class="section-img">
+        <section class="section-img" data-aos="fade-left">
           <img
             class="section-images"
             src="./images/maquillaje-natural.jpeg"
@@ -210,5 +211,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
